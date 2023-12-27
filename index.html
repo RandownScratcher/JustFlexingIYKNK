@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test JEtzt</title>
+	<style type="text/css">
+		body {
+			background-color: #0a0a23;
+  			color: #ffffff;
+  			text-align: center;
+		}
+
+		button {
+			margin: 0 auto 0 auto;
+			background-color: orangered;
+			
+			padding: 20px;
+			color: white;
+			border-width: 5px;
+
+		}
+		h1 {
+			font-size: 5em;
+		}
+
+		span {
+			color: orangered;
+			max-width: 500px;
+		}
+	</style>
+</head>
+<body>
+<h1>Output:<br> <span id="output"></span></h1>
+
+<button id="button1">
+	<strong>Start</strong>
+</button>
+<script type="text/javascript">
+	const output = document.querySelector("#output");
+
+	
+	const button1 = document.querySelector('#button1');
+
+
+	function setOuput() {
+		let input = prompt("Enter algo:")
+  		output.innerText = input;}	
+
+  	button1.onclick = setOuput;
+
+
+ 	
+
+
+</script>
+</body>
+</html>
